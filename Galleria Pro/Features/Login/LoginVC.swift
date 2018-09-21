@@ -34,6 +34,11 @@ class LoginVC: UIViewController {
     
     
     @IBAction func doLoginTouchId(_ sender: UIButton) {
+        
+        let textCodUtente = String(textFieldCodUtente.text!)
+        let fingerCheck = touchIdHelper()
+        fingerCheck.checkFingerprint(vc: self, codUtente: textCodUtente)
+        
     }
     
     //MARK: Functions

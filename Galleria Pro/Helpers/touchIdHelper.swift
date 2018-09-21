@@ -107,7 +107,7 @@ class touchIdHelper {
     /**
      This method will push the authenticated view controller onto the UINavigationController stack
      */
-    func navigateToAuthenticatedViewController(){
+    /*func navigateToAuthenticatedViewController(){
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "viewHome")
@@ -122,49 +122,67 @@ class touchIdHelper {
          
          }*/
         
-    }
+    }*/
     
-    func checkFingerprint(){
-        
-        // 1. Create a authentication context
-        let authenticationContext = LAContext()
-        var error:NSError?
-        
-        // 2. Check if the device has a fingerprint sensor
-        // If not, show the user an alert view and bail out!
-        guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+    func checkFingerprint(vc: UIViewController, codUtente: String){
+        if(codUtente == "giorgio"){
             
-            showAlertViewIfNoBiometricSensorHasBeenDetected()
-            return
-            
-        }
+            // 1. Create a authentication context
+            let authenticationContext = LAContext()
+            var error:NSError?
         
-        // 3. Check the fingerprint
-        authenticationContext.evaluatePolicy(
-            .deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: "Accedi con un dito",
-            reply: { [unowned self] (success, error) -> Void in
+            // 2. Check if the device has a fingerprint sensor
+            // If not, show the user an alert view and bail out!
+            guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
                 
-                if( success ) {
+                showAlertViewIfNoBiometricSensorHasBeenDetected()
+                return
+                
+            }
+        
+            // 3. Check the fingerprint
+            authenticationContext.evaluatePolicy(
+                .deviceOwnerAuthenticationWithBiometrics,
+                localizedReason: "Accedi con un dito",
+                reply: { [unowned self] (success, error) -> Void in
                     
-                    // Fingerprint recognized
-                    // Go to view controller
-                    self.navigateToAuthenticatedViewController()
-                    
-                }else {
-                    
-                    // Check if there is an error
-                    if let error = error {
+                    if( success ) {
                         
-                        let message = self.errorMessageForLAErrorCode(errorCode: error._code)
-                        self.showAlertViewAfterEvaluatingPolicyWithMessage(message: message)
+                        // Fingerprint recognized
+                        // Go to view controller
+                        //let openHome = LoginVM()
+                        //openHome.openHomePage(vc: vc)
+                        
+                        DispatchQueue.main.async() { () -> Void in
+                            let openHome = LoginVM()
+                            openHome.openHomePage(vc: vc)
+                        }
+                                
+                            
+                            
+                        
+                        
+                    }
+                    else {
+                        
+                        // Check if there is an error
+                        if let error = error {
+                            
+                            let message = self.errorMessageForLAErrorCode(errorCode: error._code)
+                            self.showAlertViewAfterEvaluatingPolicyWithMessage(message: message)
+                            
+                        }
                         
                     }
                     
-                }
-                
-        })
-        
+            })
+        }
+        else{
+            
+            let codError = LoginVM()
+            codError.showAlertUsername(vc: vc)
+            
+        }
     }
     
 }
