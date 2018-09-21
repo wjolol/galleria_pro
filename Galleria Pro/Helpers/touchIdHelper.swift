@@ -104,26 +104,6 @@ class touchIdHelper {
         
     }
     
-    /**
-     This method will push the authenticated view controller onto the UINavigationController stack
-     */
-    /*func navigateToAuthenticatedViewController(){
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "viewHome")
-       // self.present(controller, animated: true, completion: nil)
-        /*if let loggedInVC = storyboard?.instantiateViewController(withIdentifier: "viewHome") {
-         
-         DispatchQueue.main.async() { () -> Void in
-         
-         self.navigationController?.pushViewController(loggedInVC, animated: true)
-         
-         }
-         
-         }*/
-        
-    }*/
-    
     func checkFingerprint(vc: UIViewController, codUtente: String){
         if(codUtente == "giorgio"){
             
@@ -150,17 +130,12 @@ class touchIdHelper {
                         
                         // Fingerprint recognized
                         // Go to view controller
-                        //let openHome = LoginVM()
-                        //openHome.openHomePage(vc: vc)
                         
                         DispatchQueue.main.async() { () -> Void in
+                            
                             let openHome = LoginVM()
                             openHome.openHomePage(vc: vc)
                         }
-                                
-                            
-                            
-                        
                         
                     }
                     else {
@@ -174,7 +149,6 @@ class touchIdHelper {
                         }
                         
                     }
-                    
             })
         }
         else{
