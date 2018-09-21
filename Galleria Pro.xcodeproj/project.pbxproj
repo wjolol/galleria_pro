@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		44231C2A2155795B0042E743 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44231C292155795B0042E743 /* Homepage.storyboard */; };
+		44231C2D215596BC0042E743 /* Album1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44231C2C215596BC0042E743 /* Album1VC.swift */; };
+		44231C2F215596CD0042E743 /* Album2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44231C2E215596CD0042E743 /* Album2VC.swift */; };
+		44231C31215596DC0042E743 /* Album3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44231C30215596DC0042E743 /* Album3VC.swift */; };
 		44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0921554FFC00619DBD /* AppDelegate.swift */; };
 		44DB5A0C21554FFC00619DBD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0B21554FFC00619DBD /* LoginVC.swift */; };
 		44DB5A0F21554FFC00619DBD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DB5A0D21554FFC00619DBD /* Login.storyboard */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		44231C292155795B0042E743 /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		44231C2C215596BC0042E743 /* Album1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album1VC.swift; sourceTree = "<group>"; };
+		44231C2E215596CD0042E743 /* Album2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album2VC.swift; sourceTree = "<group>"; };
+		44231C30215596DC0042E743 /* Album3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album3VC.swift; sourceTree = "<group>"; };
 		44DB5A0621554FFC00619DBD /* Galleria Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galleria Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DB5A0921554FFC00619DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44DB5A0B21554FFC00619DBD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -100,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44231C2B2155961F0042E743 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				44231C2C215596BC0042E743 /* Album1VC.swift */,
+				44231C2E215596CD0042E743 /* Album2VC.swift */,
+				44231C30215596DC0042E743 /* Album3VC.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
 		44DB59FD21554FFC00619DBD = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +219,7 @@
 		44DB5A3E2155517300619DBD /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
+				44231C2B2155961F0042E743 /* Album */,
 				44DB5A402155519E00619DBD /* HomepageVC.swift */,
 				44DB5A43215551C100619DBD /* HomepageVM.swift */,
 			);
@@ -410,10 +427,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				44DB5A4E2155528C00619DBD /* getPhotoApiService.swift in Sources */,
+				44231C31215596DC0042E743 /* Album3VC.swift in Sources */,
 				44DB5A46215551D600619DBD /* ImpostazioniVM.swift in Sources */,
 				44DB5A4C2155524400619DBD /* loginApiService.swift in Sources */,
 				44DB5A0C21554FFC00619DBD /* LoginVC.swift in Sources */,
 				44DB5A48215551EB00619DBD /* ImpostazioniVC.swift in Sources */,
+				44231C2D215596BC0042E743 /* Album1VC.swift in Sources */,
+				44231C2F215596CD0042E743 /* Album2VC.swift in Sources */,
 				44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */,
 				44DB5A412155519E00619DBD /* HomepageVC.swift in Sources */,
 				44DB5A44215551C100619DBD /* HomepageVM.swift in Sources */,
