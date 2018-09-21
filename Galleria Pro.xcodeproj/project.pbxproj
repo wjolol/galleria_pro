@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44231C2A2155795B0042E743 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44231C292155795B0042E743 /* Homepage.storyboard */; };
 		44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0921554FFC00619DBD /* AppDelegate.swift */; };
-		44DB5A0C21554FFC00619DBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0B21554FFC00619DBD /* ViewController.swift */; };
-		44DB5A0F21554FFC00619DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DB5A0D21554FFC00619DBD /* Main.storyboard */; };
+		44DB5A0C21554FFC00619DBD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0B21554FFC00619DBD /* LoginVC.swift */; };
+		44DB5A0F21554FFC00619DBD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DB5A0D21554FFC00619DBD /* Login.storyboard */; };
 		44DB5A112155500300619DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DB5A102155500300619DBD /* Assets.xcassets */; };
 		44DB5A142155500300619DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DB5A122155500300619DBD /* LaunchScreen.storyboard */; };
 		44DB5A1F2155500300619DBD /* Galleria_ProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A1E2155500300619DBD /* Galleria_ProTests.swift */; };
 		44DB5A2A2155500300619DBD /* Galleria_ProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A292155500300619DBD /* Galleria_ProUITests.swift */; };
+		44DB5A3D2155515400619DBD /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A3C2155515400619DBD /* LoginVM.swift */; };
+		44DB5A412155519E00619DBD /* HomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A402155519E00619DBD /* HomepageVC.swift */; };
+		44DB5A44215551C100619DBD /* HomepageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A43215551C100619DBD /* HomepageVM.swift */; };
+		44DB5A46215551D600619DBD /* ImpostazioniVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A45215551D600619DBD /* ImpostazioniVM.swift */; };
+		44DB5A48215551EB00619DBD /* ImpostazioniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A47215551EB00619DBD /* ImpostazioniVC.swift */; };
+		44DB5A4A2155521A00619DBD /* touchIdHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A492155521A00619DBD /* touchIdHelper.swift */; };
+		44DB5A4C2155524400619DBD /* loginApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A4B2155524400619DBD /* loginApiService.swift */; };
+		44DB5A4E2155528C00619DBD /* getPhotoApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A4D2155528C00619DBD /* getPhotoApiService.swift */; };
+		44DB5A51215552AA00619DBD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DB5A50215552AA00619DBD /* LocalAuthentication.framework */; };
+		993F131350A27BCC286F3A31 /* Pods_Galleria_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBE608DE7BA9B2C10A69EE6 /* Pods_Galleria_Pro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44231C292155795B0042E743 /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
 		44DB5A0621554FFC00619DBD /* Galleria Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galleria Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DB5A0921554FFC00619DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44DB5A0B21554FFC00619DBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44DB5A0E21554FFC00619DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44DB5A0B21554FFC00619DBD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		44DB5A0E21554FFC00619DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		44DB5A102155500300619DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44DB5A132155500300619DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44DB5A152155500300619DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,18 @@
 		44DB5A252155500300619DBD /* Galleria ProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Galleria ProUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DB5A292155500300619DBD /* Galleria_ProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galleria_ProUITests.swift; sourceTree = "<group>"; };
 		44DB5A2B2155500300619DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44DB5A3C2155515400619DBD /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		44DB5A402155519E00619DBD /* HomepageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVC.swift; sourceTree = "<group>"; };
+		44DB5A43215551C100619DBD /* HomepageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageVM.swift; sourceTree = "<group>"; };
+		44DB5A45215551D600619DBD /* ImpostazioniVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniVM.swift; sourceTree = "<group>"; };
+		44DB5A47215551EB00619DBD /* ImpostazioniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniVC.swift; sourceTree = "<group>"; };
+		44DB5A492155521A00619DBD /* touchIdHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchIdHelper.swift; sourceTree = "<group>"; };
+		44DB5A4B2155524400619DBD /* loginApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApiService.swift; sourceTree = "<group>"; };
+		44DB5A4D2155528C00619DBD /* getPhotoApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPhotoApiService.swift; sourceTree = "<group>"; };
+		44DB5A50215552AA00619DBD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		4DBE608DE7BA9B2C10A69EE6 /* Pods_Galleria_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Galleria_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		595149AD0D6ADE25CEBA4BED /* Pods-Galleria Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galleria Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro.release.xcconfig"; sourceTree = "<group>"; };
+		5DE74A56C610E29C4CAAB2C0 /* Pods-Galleria Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galleria Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DB5A51215552AA00619DBD /* LocalAuthentication.framework in Frameworks */,
+				993F131350A27BCC286F3A31 /* Pods_Galleria_Pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,8 @@
 				44DB5A1D2155500300619DBD /* Galleria ProTests */,
 				44DB5A282155500300619DBD /* Galleria ProUITests */,
 				44DB5A0721554FFC00619DBD /* Products */,
+				44DB5A4F215552AA00619DBD /* Frameworks */,
+				8621E15C1FB22B0F33532F64 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +125,13 @@
 		44DB5A0821554FFC00619DBD /* Galleria Pro */ = {
 			isa = PBXGroup;
 			children = (
+				44DB5A3A2155507800619DBD /* Entities */,
+				44DB5A392155506B00619DBD /* Services */,
+				44DB5A382155505900619DBD /* Features */,
+				44DB5A372155503300619DBD /* Helpers */,
 				44DB5A0921554FFC00619DBD /* AppDelegate.swift */,
-				44DB5A0B21554FFC00619DBD /* ViewController.swift */,
-				44DB5A0D21554FFC00619DBD /* Main.storyboard */,
+				44DB5A0D21554FFC00619DBD /* Login.storyboard */,
+				44231C292155795B0042E743 /* Homepage.storyboard */,
 				44DB5A102155500300619DBD /* Assets.xcassets */,
 				44DB5A122155500300619DBD /* LaunchScreen.storyboard */,
 				44DB5A152155500300619DBD /* Info.plist */,
@@ -125,6 +157,85 @@
 			path = "Galleria ProUITests";
 			sourceTree = "<group>";
 		};
+		44DB5A372155503300619DBD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A492155521A00619DBD /* touchIdHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44DB5A382155505900619DBD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A3F2155518300619DBD /* Impostazioni */,
+				44DB5A3E2155517300619DBD /* Homepage */,
+				44DB5A3B215550F900619DBD /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		44DB5A392155506B00619DBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A4B2155524400619DBD /* loginApiService.swift */,
+				44DB5A4D2155528C00619DBD /* getPhotoApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44DB5A3A2155507800619DBD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		44DB5A3B215550F900619DBD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A0B21554FFC00619DBD /* LoginVC.swift */,
+				44DB5A3C2155515400619DBD /* LoginVM.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		44DB5A3E2155517300619DBD /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A402155519E00619DBD /* HomepageVC.swift */,
+				44DB5A43215551C100619DBD /* HomepageVM.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		44DB5A3F2155518300619DBD /* Impostazioni */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A45215551D600619DBD /* ImpostazioniVM.swift */,
+				44DB5A47215551EB00619DBD /* ImpostazioniVC.swift */,
+			);
+			path = Impostazioni;
+			sourceTree = "<group>";
+		};
+		44DB5A4F215552AA00619DBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44DB5A50215552AA00619DBD /* LocalAuthentication.framework */,
+				4DBE608DE7BA9B2C10A69EE6 /* Pods_Galleria_Pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8621E15C1FB22B0F33532F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DE74A56C610E29C4CAAB2C0 /* Pods-Galleria Pro.debug.xcconfig */,
+				595149AD0D6ADE25CEBA4BED /* Pods-Galleria Pro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44DB5A2E2155500400619DBD /* Build configuration list for PBXNativeTarget "Galleria Pro" */;
 			buildPhases = (
+				B71F7F5B66D726DE9792BB6C /* [CP] Check Pods Manifest.lock */,
 				44DB5A0221554FFC00619DBD /* Sources */,
 				44DB5A0321554FFC00619DBD /* Frameworks */,
 				44DB5A0421554FFC00619DBD /* Resources */,
+				9A2BE2720883924530773F4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44231C2A2155795B0042E743 /* Homepage.storyboard in Resources */,
 				44DB5A142155500300619DBD /* LaunchScreen.storyboard in Resources */,
 				44DB5A112155500300619DBD /* Assets.xcassets in Resources */,
-				44DB5A0F21554FFC00619DBD /* Main.storyboard in Resources */,
+				44DB5A0F21554FFC00619DBD /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +365,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A2BE2720883924530773F4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71F7F5B66D726DE9792BB6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Galleria Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44DB5A0221554FFC00619DBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DB5A0C21554FFC00619DBD /* ViewController.swift in Sources */,
+				44DB5A4E2155528C00619DBD /* getPhotoApiService.swift in Sources */,
+				44DB5A46215551D600619DBD /* ImpostazioniVM.swift in Sources */,
+				44DB5A4C2155524400619DBD /* loginApiService.swift in Sources */,
+				44DB5A0C21554FFC00619DBD /* LoginVC.swift in Sources */,
+				44DB5A48215551EB00619DBD /* ImpostazioniVC.swift in Sources */,
 				44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */,
+				44DB5A412155519E00619DBD /* HomepageVC.swift in Sources */,
+				44DB5A44215551C100619DBD /* HomepageVM.swift in Sources */,
+				44DB5A4A2155521A00619DBD /* touchIdHelper.swift in Sources */,
+				44DB5A3D2155515400619DBD /* LoginVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +454,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44DB5A0D21554FFC00619DBD /* Main.storyboard */ = {
+		44DB5A0D21554FFC00619DBD /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				44DB5A0E21554FFC00619DBD /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		44DB5A122155500300619DBD /* LaunchScreen.storyboard */ = {
@@ -428,6 +589,7 @@
 		};
 		44DB5A2F2155500400619DBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE74A56C610E29C4CAAB2C0 /* Pods-Galleria Pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,12 +601,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "giorgio.Galleria-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		44DB5A302155500400619DBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595149AD0D6ADE25CEBA4BED /* Pods-Galleria Pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,7 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "giorgio.Galleria-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
