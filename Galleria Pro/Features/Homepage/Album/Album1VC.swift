@@ -11,11 +11,28 @@ import XLPagerTabStrip
 
 class Album1VC: UIViewController, IndicatorInfoProvider {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
+    
+    
     //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        scrollView.contentSize = CGSize(width: 400, height: 580)
+        
+        for i in 0..<15{
+            
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 22))
+            label.center = CGPoint(x: 128, y: 1 + (( i+1 ) * 100 ))
+            label.textAlignment = .center
+            label.text = "Label" + String(i)
+            
+            contentView.addSubview(label)
+            
+        }
+
     }
     
     override func didReceiveMemoryWarning() {

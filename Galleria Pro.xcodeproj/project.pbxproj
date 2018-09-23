@@ -27,6 +27,7 @@
 		44DB5A4C2155524400619DBD /* loginApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A4B2155524400619DBD /* loginApiService.swift */; };
 		44DB5A4E2155528C00619DBD /* getPhotoApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A4D2155528C00619DBD /* getPhotoApiService.swift */; };
 		44DB5A51215552AA00619DBD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DB5A50215552AA00619DBD /* LocalAuthentication.framework */; };
+		44E12F832157EF9500F07CEF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E12F822157EF9500F07CEF /* Photo.swift */; };
 		993F131350A27BCC286F3A31 /* Pods_Galleria_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBE608DE7BA9B2C10A69EE6 /* Pods_Galleria_Pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		44DB5A4B2155524400619DBD /* loginApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApiService.swift; sourceTree = "<group>"; };
 		44DB5A4D2155528C00619DBD /* getPhotoApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getPhotoApiService.swift; sourceTree = "<group>"; };
 		44DB5A50215552AA00619DBD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		44E12F822157EF9500F07CEF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4DBE608DE7BA9B2C10A69EE6 /* Pods_Galleria_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Galleria_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		595149AD0D6ADE25CEBA4BED /* Pods-Galleria Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galleria Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro.release.xcconfig"; sourceTree = "<group>"; };
 		5DE74A56C610E29C4CAAB2C0 /* Pods-Galleria Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galleria Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		44DB5A3A2155507800619DBD /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				44E12F822157EF9500F07CEF /* Photo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				44231C2F215596CD0042E743 /* Album2VC.swift in Sources */,
 				44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */,
 				44DB5A412155519E00619DBD /* HomepageVC.swift in Sources */,
+				44E12F832157EF9500F07CEF /* Photo.swift in Sources */,
 				44DB5A44215551C100619DBD /* HomepageVM.swift in Sources */,
 				44DB5A4A2155521A00619DBD /* touchIdHelper.swift in Sources */,
 				44DB5A3D2155515400619DBD /* LoginVM.swift in Sources */,
