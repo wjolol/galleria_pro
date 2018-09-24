@@ -13,6 +13,7 @@ class ImpostazioniVC: UIViewController{
     
     //MARK: Properties
     @IBOutlet weak var switchDati: UISwitch!
+    @IBOutlet weak var buttonLogout: UIButton!
     
     //MARK: Actions
     
@@ -44,6 +45,12 @@ class ImpostazioniVC: UIViewController{
        
     }
     
+    @IBAction func clickButtonLogout(_ sender: UIButton) {
+        
+        let login = ImpostazioniVM()
+        login.openLogin(vc: self)
+        
+    }
     
     //MARK: Functions
     

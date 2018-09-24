@@ -35,6 +35,20 @@ class ImpostazioniVM {
         
     }
     
+    func openLogin(vc: UIViewController){
+        
+        //let dati = UserDefaults.standard
+        
+        //dati.set(false, forKey: "statoSwitch")
+        //dati.set(false, forKey: "isOn")
+        
+        var mainView: UIStoryboard!
+        mainView = UIStoryboard(name: "Login", bundle: nil)
+        let viewcontroller : UIViewController = mainView.instantiateViewController(withIdentifier: "LoginVC") as UIViewController
+        vc.present(viewcontroller, animated: true, completion:nil)
+        
+    }
+    
     
     
 }

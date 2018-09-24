@@ -9,41 +9,48 @@
 import UIKit
 import XLPagerTabStrip
 
-class Album1VC: UIViewController, IndicatorInfoProvider {
+class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, IndicatorInfoProvider {
     
     //MARK: Properties
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var contentView: UIView!
+   
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewCell: UICollectionViewCell!
     
     //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = contentView.frame.size
-        //scrollView.delegate = self
-        
-        for i in 0..<15{
-            
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 22))
-            label.center = CGPoint(x: 128, y: 1 + (( i+1 ) * 100 ))
-            label.textAlignment = .center
-            label.text = "Label" + String(i)
-            
-           
-            contentView.addSubview(label)
-            
-        }
-
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        //questo valore serve per far capire alla Collection View quante celle devono essere visualizzate
+        return 50
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! CollectionViewCell
+        
+        //impostiamo l'immagine e il testo della label con quelli precedentemente dichiarati nelle due variabili
+       cell.labelCell.text = "Label"
+       
+        
+        return cell
+    }
+    
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "Album 1")
     }
-    
+
 }
+
+
+
+
