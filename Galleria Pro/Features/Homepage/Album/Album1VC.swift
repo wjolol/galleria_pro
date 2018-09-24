@@ -11,16 +11,17 @@ import XLPagerTabStrip
 
 class Album1VC: UIViewController, IndicatorInfoProvider {
     
+    //MARK: Properties
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
-    
     
     //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: 400, height: 580)
+        scrollView.contentSize = contentView.frame.size
+        //scrollView.delegate = self
         
         for i in 0..<15{
             
@@ -29,6 +30,7 @@ class Album1VC: UIViewController, IndicatorInfoProvider {
             label.textAlignment = .center
             label.text = "Label" + String(i)
             
+           
             contentView.addSubview(label)
             
         }

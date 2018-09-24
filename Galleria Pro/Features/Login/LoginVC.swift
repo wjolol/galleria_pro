@@ -35,7 +35,9 @@ class LoginVC: UIViewController {
     
     @IBAction func doLoginTouchId(_ sender: UIButton) {
         
+        
         let textCodUtente = String(textFieldCodUtente.text!)
+        
         let fingerCheck = touchIdHelper()
         fingerCheck.checkFingerprint(vc: self, codUtente: textCodUtente)
         
@@ -45,6 +47,9 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let check = LoginVM()
+        check.checkPreferenze(textField: textFieldCodUtente)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

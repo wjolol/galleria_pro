@@ -11,8 +11,11 @@ import XLPagerTabStrip
 
 class HomepageVC: ButtonBarPagerTabStripViewController{
     
+    //MARK: Properties
+    @IBOutlet weak var buttonImpostazioni: UIButton!
     
     let purpleInspireColor = UIColor(red:0.13, green:0.03, blue:0.25, alpha:1.0)
+    
     //MARK: Functions
     
     override func viewDidLoad() {
@@ -49,5 +52,13 @@ class HomepageVC: ButtonBarPagerTabStripViewController{
         return [album_1, album_2, album_3]
     }
 
+    //MARK: Actions
+    
+    @IBAction func clickButtonImpostazioni(_ sender: UIButton) {
+        
+        let click = HomepageVM()
+        click.openImpostazioni(vc: self)
+        
+    }
     
 }
