@@ -9,7 +9,7 @@
 import UIKit
 import LocalAuthentication
 
-class touchIdHelper {
+class TouchIdHelper {
     
     /**
      This method will present an UIAlertViewController to inform the user that the device has not a TouchID sensor.

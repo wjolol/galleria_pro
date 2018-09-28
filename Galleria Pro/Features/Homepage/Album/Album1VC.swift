@@ -16,11 +16,12 @@ class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewCell: UICollectionViewCell!
     
+  
     //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,12 +36,16 @@ class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! CollectionViewCell
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! CollectionViewCell
+        let download = GetDataApiService()
+        download.downloadData(numAlbum: "1") { (result) -> () in
+            //print("Stato:" + result)
+            
+             cell.labelCell.text = result[indexPath.item]
         
-        //impostiamo l'immagine e il testo della label con quelli precedentemente dichiarati nelle due variabili
-       cell.labelCell.text = "Label"
-       
+        }
+        
         
         return cell
     }
@@ -48,7 +53,7 @@ class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "Album 1")
     }
-
+    
 }
 
 

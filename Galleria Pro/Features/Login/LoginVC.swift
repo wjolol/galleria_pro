@@ -38,7 +38,7 @@ class LoginVC: UIViewController {
         
         let textCodUtente = String(textFieldCodUtente.text!)
         
-        let fingerCheck = touchIdHelper()
+        let fingerCheck = TouchIdHelper()
         fingerCheck.checkFingerprint(vc: self, codUtente: textCodUtente)
         
     }

@@ -10,6 +10,8 @@ import UIKit
 
 class HomepageVM {
     
+    let photoObj = Photo()
+    
     //MARK: Functions
     func openImpostazioni(vc: UIViewController){
         
@@ -19,5 +21,15 @@ class HomepageVM {
         vc.present(viewcontroller, animated: true, completion:nil)
     }
     
+    func insertData(title: String){
+        
+        photoObj.setTitle(title: title)
+
+    }
     
+    func getLabelTitle() -> String{
+        
+        return photoObj.getTitle()
+        
+    }
 }
