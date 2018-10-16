@@ -38,7 +38,7 @@ class Album2VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         let download = GetDataApiService()
         
         download.downloadData(numAlbum: "2") { (result) -> () in
-            // do stuff with the result
+            
             //print(result)
               cell.labelCell.text = result[indexPath.item]
             

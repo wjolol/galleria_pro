@@ -6,4 +6,5 @@ target 'Galleria Pro' do
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.3'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'SimpleTwoWayBinding'
 end

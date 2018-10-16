@@ -8,6 +8,7 @@
 
 import UIKit
 import XLPagerTabStrip
+import SimpleTwoWayBinding
 
 class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, IndicatorInfoProvider {
     
@@ -16,12 +17,18 @@ class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewCell: UICollectionViewCell!
     
-  
+    
+    var viewModel: HomepageViewModel? {
+        didSet {
+            fillUI()
+        }
+    }
     //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,18 +43,27 @@ class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! CollectionViewCell
         
-        let download = GetDataApiService()
-        download.downloadData(numAlbum: "1") { (result) -> () in
-            //print("Stato:" + result)
-            
-             cell.labelCell.text = result[indexPath.item]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath as IndexPath) as! CollectionViewCell
         
+        viewModel = HomepageViewModel(numAlbum: "1", indexPath: indexPath)
+        viewModel?.labelText.bindAndFire { [unowned cell] in cell.labelCell.text = $0 }
+
+        return cell
+    }
+
+    fileprivate func fillUI() {
+        if !isViewLoaded {
+            return
         }
         
+        guard let viewModel = viewModel else {
+            return
+        }
         
-        return cell
+        // we are sure here that we have all the setup done
+        
+        
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
@@ -55,7 +71,3 @@ class Album1VC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
 }
-
-
-
-

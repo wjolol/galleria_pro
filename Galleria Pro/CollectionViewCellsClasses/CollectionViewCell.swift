@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SimpleTwoWayBinding
 
 class CollectionViewCell: UICollectionViewCell {
     

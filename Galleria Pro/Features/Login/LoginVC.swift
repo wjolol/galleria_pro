@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SimpleTwoWayBinding
 
 class LoginVC: UIViewController {
-    
+
     //MARK: Properties
     
     @IBOutlet weak var textFieldCodUtente: UITextField!
@@ -32,7 +33,6 @@ class LoginVC: UIViewController {
     
     }
     
-    
     @IBAction func doLoginTouchId(_ sender: UIButton) {
         
         
@@ -43,10 +43,12 @@ class LoginVC: UIViewController {
         
     }
     
+    var viewModel: LoginViewModel!
     //MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let check = LoginVM()
         check.checkPreferenze(textField: textFieldCodUtente)
         
@@ -56,6 +58,11 @@ class LoginVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setupBindings() {
+        textFieldCodUtente.bind(with: viewModel.codUtente)
+        textFieldPassword.bind(with: viewModel.password)
     }
 
 }

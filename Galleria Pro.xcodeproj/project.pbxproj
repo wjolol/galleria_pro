@@ -13,8 +13,10 @@
 		44231C2D215596BC0042E743 /* Album1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44231C2C215596BC0042E743 /* Album1VC.swift */; };
 		44231C2F215596CD0042E743 /* Album2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44231C2E215596CD0042E743 /* Album2VC.swift */; };
 		44231C31215596DC0042E743 /* Album3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44231C30215596DC0042E743 /* Album3VC.swift */; };
-		445ECC6C215CED4E00DCFB03 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445ECC6B215CED4D00DCFB03 /* CollectionViewCell2.swift */; };
+		447E8B83216248AA00219DF2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E8B82216248AA00219DF2 /* LoginViewModel.swift */; };
+		447E8B85216349E700219DF2 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E8B84216349E700219DF2 /* HomepageViewModel.swift */; };
 		4489C01D215A1FB200E464D5 /* GetDataApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489C01C215A1FB200E464D5 /* GetDataApiService.swift */; };
+		4497A2EC2166097000B59BDF /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4497A2EB2166097000B59BDF /* Dynamic.swift */; };
 		44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0921554FFC00619DBD /* AppDelegate.swift */; };
 		44DB5A0C21554FFC00619DBD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB5A0B21554FFC00619DBD /* LoginVC.swift */; };
 		44DB5A0F21554FFC00619DBD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DB5A0D21554FFC00619DBD /* Login.storyboard */; };
@@ -58,8 +60,10 @@
 		44231C2C215596BC0042E743 /* Album1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album1VC.swift; sourceTree = "<group>"; };
 		44231C2E215596CD0042E743 /* Album2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album2VC.swift; sourceTree = "<group>"; };
 		44231C30215596DC0042E743 /* Album3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album3VC.swift; sourceTree = "<group>"; };
-		445ECC6B215CED4D00DCFB03 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
+		447E8B82216248AA00219DF2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		447E8B84216349E700219DF2 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
 		4489C01C215A1FB200E464D5 /* GetDataApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataApiService.swift; sourceTree = "<group>"; };
+		4497A2EB2166097000B59BDF /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		44DB5A0621554FFC00619DBD /* Galleria Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galleria Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DB5A0921554FFC00619DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44DB5A0B21554FFC00619DBD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -135,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				440F407E2159161100987B22 /* CollectionViewCell.swift */,
-				445ECC6B215CED4D00DCFB03 /* CollectionViewCell2.swift */,
 			);
 			path = CollectionViewCellsClasses;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			children = (
 				445ECC67215CAECE00DCFB03 /* Extensions */,
 				44DB5A492155521A00619DBD /* TouchIdHelper.swift */,
+				4497A2EB2166097000B59BDF /* Dynamic.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -240,6 +244,7 @@
 			children = (
 				44DB5A0B21554FFC00619DBD /* LoginVC.swift */,
 				44DB5A3C2155515400619DBD /* LoginVM.swift */,
+				447E8B82216248AA00219DF2 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				44231C2B2155961F0042E743 /* Album */,
 				44DB5A402155519E00619DBD /* HomepageVC.swift */,
 				44DB5A43215551C100619DBD /* HomepageVM.swift */,
+				447E8B84216349E700219DF2 /* HomepageViewModel.swift */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Galleria Pro/Pods-Galleria Pro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleTwoWayBinding/SimpleTwoWayBinding.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
@@ -428,6 +435,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleTwoWayBinding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
@@ -464,17 +472,19 @@
 				44231C31215596DC0042E743 /* Album3VC.swift in Sources */,
 				44DB5A46215551D600619DBD /* ImpostazioniVM.swift in Sources */,
 				44DB5A4C2155524400619DBD /* LoginApiService.swift in Sources */,
+				4497A2EC2166097000B59BDF /* Dynamic.swift in Sources */,
 				44DB5A0C21554FFC00619DBD /* LoginVC.swift in Sources */,
+				447E8B85216349E700219DF2 /* HomepageViewModel.swift in Sources */,
 				440F407F2159161100987B22 /* CollectionViewCell.swift in Sources */,
 				44DB5A48215551EB00619DBD /* ImpostazioniVC.swift in Sources */,
 				4489C01D215A1FB200E464D5 /* GetDataApiService.swift in Sources */,
 				44231C2D215596BC0042E743 /* Album1VC.swift in Sources */,
 				44231C2F215596CD0042E743 /* Album2VC.swift in Sources */,
 				44DB5A0A21554FFC00619DBD /* AppDelegate.swift in Sources */,
+				447E8B83216248AA00219DF2 /* LoginViewModel.swift in Sources */,
 				44DB5A412155519E00619DBD /* HomepageVC.swift in Sources */,
 				44E12F832157EF9500F07CEF /* Photo.swift in Sources */,
 				44DB5A44215551C100619DBD /* HomepageVM.swift in Sources */,
-				445ECC6C215CED4E00DCFB03 /* CollectionViewCell2.swift in Sources */,
 				44DB5A4A2155521A00619DBD /* TouchIdHelper.swift in Sources */,
 				44DB5A3D2155515400619DBD /* LoginVM.swift in Sources */,
 			);
